@@ -1,0 +1,44 @@
+.neon-btn-cont{
+  padding: 0;
+  height: 50px;
+  width: 100%;
+  margin-bottom: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: consolas;
+  position: relative;
+  margin-top: 50px;
+}
+.neon-btn-cont-cont{
+  width: 60%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 55px 30px;
+  color: #2196f3;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 24px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.neon-btn-animation{
+ animation: neon linear;
+ animation-timeline: view();
+}
+
+@keyframes neon {
+  to{
+    color: #255784;
+    background-color: #2196f3;
+    transition-delay: 1s;
+    box-shadow: 0 0 10px #2196f3,0 0 40px #2196f3,0 0 80px #2196f3;
+    width: 100%;
+  }
+}
+
+

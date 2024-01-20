@@ -1,0 +1,51 @@
+.footer{
+  background-color: white;
+  width: 100%;
+  height: 80px;
+  margin-top: 20px;
+  padding: 0;
+}
+.comms{
+  display: flex;
+}
+.icons{
+  width: 30px;
+  height: 30px;
+}
+.common{
+  display: grid;
+  place-content: center;
+  height: 50px;
+  width: 100px;
+  position: relative;
+}
+.lines span{
+  position: absolute;
+  display: block;
+}
+.lines span:nth-child(1){
+  top: 0;
+  left: -100%;
+  background:linear-gradient(to right, transparent,black,black);
+  width: 100%;
+  height: 2px;
+  opacity: 0;
+}
+.lines:hover span:nth-child(1){
+  left: 0;
+  opacity: 1;
+  transition: 0.5s;
+}
+.lines span:nth-child(2){
+  bottom: 0;
+  right: -100%;
+  background:linear-gradient(to left, transparent,black);
+  width: 100%;
+  height: 2px;
+  opacity: 0;
+}
+.lines:hover span:nth-child(2){
+  right: -10%;
+  opacity: 1;
+  transition: 0.5s;
+}
